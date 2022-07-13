@@ -8,3 +8,97 @@
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
 */
+
+body {
+    --wp--style--block-gap: 0;
+}
+
+.site-title {margin-bottom: 0.1em;}
+
+h1.entry-title  {font-size: 33px !important; font-weight: 600 !important;} 
+
+.ast-breadcrumbs-wrapper {padding-bottom: 15px;}
+
+.ast-container {padding-left: 5px; padding-right: 5px;}
+.ast-separate-container .ast-archive-description {background-color: #fff; padding: 2em 6em; border: 1.5px dotted #12BAE3;}
+
+.ast-below-header-bar {background-color: white;}
+
+
+/* menu styling */
+
+.menu-item a {text-transform: capitalize;font-family: Source Sans Pro, sans-serif;font-size: 18px;font-weight: 600;}
+
+.tertiary_menu_class {
+    color: blue;
+}
+
+
+/* fonts */
+
+body, button, input, select, textarea, .ast-button, .ast-custom-button {
+    font-family: 'Alegreya Sans',sans-serif;
+}
+
+
+/* block styling */
+
+.wp-block-coblocks-dynamic-separator:before {color: #019ce8;}
+.accordion {outline: dashed;outline-width: thin;outline-color: #12BAE3;width: 90%;margin:auto;}
+.wp-block-coblocks-accordion-item__title {color: #1700d1}
+
+.wp-block-pullquote p {font-size: 23px;} cite {font-size: 16px;}
+
+.wp-block-columns {width: 90% !important;}
+
+.wp-block-media-text {width: 95% !important; padding: 25px 25px 28px 25px;box-shadow: 2px 4px 5px 3px #637398;}
+
+
+/* comments styling */
+
+.nav-links {background-color: white;} .nav-links a[href*="comments"] {padding-left: 5em;} 
+.ast-comment-list li.depth-1 {padding: 2em 3em 1em !important;}
+
+
+/* widgets */
+
+.jetpack_subscription_widget button, input [type="submit"] {background: #8505da; font-family: Source Sans Pro, sans-serif;}
+.widget {padding: 2rem 1rem 2rem 1rem; box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.2);background-color: white;}
+
+
+/* grid areas */
+
+.grid-area-2-by-2 {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    column-gap: 50px;
+    align-items: stretch;
+}
+
+.grid-area-1-by-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    align-items: stretch;
+}
+
+.grid-area-3-by-3 {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    align-items: stretch;
+    gap: 20px;
+}
+
+
+/* media queries */
+
+@media only screen and (min-width: 481px) { 
+	.ast-separate-container .ast-article-post, .ast-separate-container .ast-article-single {padding: 3rem 5.5rem !important;}
+    .post-thumb-img-content {max-width: 75%; margin: auto;}}
+@media only screen and (max-width: 480px) {
+    .widget {max-width: 80%; margin: auto; margin-bottom: 1em;}}
+
+@media only screen and (min-width: 922px) {
+    
+}
+
